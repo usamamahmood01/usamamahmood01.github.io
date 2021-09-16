@@ -20,6 +20,34 @@
   
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #343a40;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: #17a2b8;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #443f3f;
+}
+</style>
   
 </head>
 
@@ -91,86 +119,102 @@
           </div> 
           <div class="col-lg-8 col-sm-12 order-lg-1 my-auto showcase-text">
             <h2>Week-1 <h2>
-              <ul>
-                <li style="color:white; font-size:30px">Github</li>
-                <p class="lead mb-0">Spent a lot of time learning <a href="https://git-scm.com/docs" target="_blank">github</a>, especially on command line. Creating & deleting random repos, push & pull and branching etc. I hope I will master git by the end the semster so I don't suffer merge conflicts.</p>
 
-                <li style="color:white; font-size:30px">Portfolio</li>
-                <p class="lead mb-0">Learned and practiced basics of html, css, and bootstrap.</p>
-                <p class="lead mb-0">Making <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> is kind of mini project itself, I can show my skills and it looks nice.</p>
+              <button class="collapsible">Week-1</button>
+                <div class="content bg-dark">
+                  <ul>
+                    <li style="color:white; font-size:30px">Github</li>
+                    <p class="lead mb-0">Spent a lot of time learning <a href="https://git-scm.com/docs" target="_blank">github</a>, especially on command line. Creating & deleting random repos, push & pull and branching etc. I hope I will master git by the end the semster so I don't suffer merge conflicts.</p>
+    
+                    <li style="color:white; font-size:30px">Portfolio</li>
+                    <p class="lead mb-0">Learned and practiced basics of html, css, and bootstrap.</p>
+                    <p class="lead mb-0">Making <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> is kind of mini project itself, I can show my skills and it looks nice.</p>
+    
+                    <li style="color:white; font-size:30px">TypeScript</li>
+                    <p class="lead mb-0">Read this beautiful thing from one of the tutorials provided by prof Bart, you can find <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" target="_blank">here</a>. Types and Interfaces are really confusing right now, but I think I will get them next week.</p>
+    
+                    <li style="color:white; font-size:30px">React: Tic Tac Toe</li>
+                    <p class="lead mb-0">Another tutorial provided by prof Bart <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">here</a>. You can find starter code <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010" target="_blank">here</a>. Learned about React component class/types and the elements. Went over the tutorial on how to make Tic Tac Toe.</p>
+    
+                  </ul>
+                </div>
 
-                <li style="color:white; font-size:30px">TypeScript</li>
-                <p class="lead mb-0">Read this beautiful thing from one of the tutorials provided by prof Bart, you can find <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" target="_blank">here</a>. Types and Interfaces are really confusing right now, but I think I will get them next week.</p>
-
-                <li style="color:white; font-size:30px">React: Tic Tac Toe</li>
-                <p class="lead mb-0">Another tutorial provided by prof Bart <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">here</a>. You can find starter code <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010" target="_blank">here</a>. Learned about React component class/types and the elements. Went over the tutorial on how to make Tic Tac Toe.</p>
-
-              </ul>
-            </div>
-          </div>
-      </div>
+                <h2>Change Log<h2>                            
+                  <button class="collapsible">Week-1</button>
+                  <div class="content bg-dark">
+                    <ul>
+                      <li style="color:white; font-size:30px">Added links</li>
+                      <p class="lead mb-0">9/4/2021 Added links to my <a href="https://git-scm.com/docs" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/usamamahmood/" target="_blank">Linkedin</a> and <a href="https://twitter.com/yngmalang" target="_blank">Twitter</a>.</p>
       
-      <!-- change log -->
-          <div class="row no-gutters bg-dark text-light pt-3 pb-3"> 
-            <div class="col-lg-4 col-sm-12 order-lg-2 text-white showcase-img">
-            </div> 
-            <div class="col-lg-8 col-sm-12 order-lg-1 my-auto showcase-text">
-              <h2>Change Log<h2>
-                <ul>
-                  <li style="color:white; font-size:30px">Added links</li>
-                  <p class="lead mb-0">9/4/2021 Added links to my <a href="https://git-scm.com/docs" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/usamamahmood/" target="_blank">Linkedin</a> and <a href="https://twitter.com/yngmalang" target="_blank">Twitter</a>.</p>
+                      <li style="color:white; font-size:30px">Added contacts</li>
+                      <p class="lead mb-0">9/4/2021 Provided my phone number and email for contact purpose.</p>
+      
+                      <li style="color:white; font-size:30px">Added skills</li>
+                      <p class="lead mb-0">9/6/2021 Added my learned skills during past week under section Week 1. Worked on <a href="https://git-scm.com/docs" target="_blank">github</a>, <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> itself which includes html, css, and bootstrap, <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">Tic Tac Toe (React)</a> and <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" target="_blank">TypeScript</a> basics.</p>
+      
+                      <li style="color:white; font-size:30px">Added Image and hyper links</li>
+                      <p class="lead mb-0">9/8/2021 Added my profile image, sizing and displaying in the middle in circular shape and all the hyperlinks.</p>
+                    </ul></div>
   
-                  <li style="color:white; font-size:30px">Added contacts</li>
-                  <p class="lead mb-0">9/4/2021 Provided my phone number and email for contact purpose.</p>
+            <!-- TODO -->
   
-                  <li style="color:white; font-size:30px">Added skills</li>
-                  <p class="lead mb-0">9/6/2021 Added my learned skills during past week under section Week 1. Worked on <a href="https://git-scm.com/docs" target="_blank">github</a>, <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> itself which includes html, css, and bootstrap, <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">Tic Tac Toe (React)</a> and <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" target="_blank">TypeScript</a> basics.</p>
   
-                  <li style="color:white; font-size:30px">Added Image and hyper links</li>
-                  <p class="lead mb-0">9/8/2021 Added my profile image, sizing and displaying in the middle in circular shape and all the hyperlinks.</p>
-                </ul>
-                </div>
-            </div>
-          </div>
-
-<!-- TODO -->
-
-          <div class="row no-gutters bg-dark text-light pt-3 pb-3"> 
-            <div class="col-lg-4 col-sm-12 order-lg-2 text-white showcase-img">
-            </div> 
-            <div class="col-lg-8 col-sm-12 order-lg-1 my-auto showcase-text">
-              <h2>TODO<h2>
-                <ul>
-                  <li style="color:white; font-size:30px">Finish the Tic Tac Toe tutorial</li>
-                  <p class="lead mb-0">Finish the Tic Tac Toe tutorial, including all the 6 features given as practice at the end of the page. You can find <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">here.</a> </p>
-  
-                  <li style="color:white; font-size:30px">Organizing Portfolio</li>
-                  <p class="lead mb-0">I think I will organize my <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> too, putting Change Log and TODO as a buttons or maybe dropdown menu somthing. Also I think I will pack these things and compress the pages to no more than 2.</p>
-  
-                  <li style="color:white; font-size:30px">React hooks</li>
-                  <p class="lead mb-0">New day, New Lessons. I hope will add a lot more new skills of React. I think I will play with <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">hooks</a> this week.</p>
-  
-     
-                  <li style="color:white; font-size:30px">TypeScript</li>
-                  <p class="lead mb-0">Read couple of pages from the book provided by prof Bart <a href="https://www.oreilly.com/library/view/programming-typescript/9781492037644/" target="_blank">here</a>.</p>
-  
-                   <li style="color:white; font-size:30px">Explore new options</li>
-                  <p class="lead mb-0">Watching youTube videos and going through articles provided by other classmates.</p>
-
+                <h2>TODO<h2>
                   
-                </ul>
-                </div>
-            </div>
-          </div>
+                  <button class="collapsible">Week-1</button>
+                      <div class="content bg-dark">
+                        <ul>
+                          <li style="color:white; font-size:30px">Finish the Tic Tac Toe tutorial</li>
+                          <p class="lead mb-0">Finish the Tic Tac Toe tutorial, including all the 6 features given as practice at the end of the page. You can find <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">here.</a> </p>
           
+                          <li style="color:white; font-size:30px">Organizing Portfolio</li>
+                          <p class="lead mb-0">I think I will organize my <a href="https://github.com/usamamahmood01/usamamahmood01.github.io" target="_blank">portfolio</a> too, putting Change Log and TODO as a buttons or maybe dropdown menu somthing. Also I think I will pack these things and compress the pages to no more than 2.</p>
+          
+                          <li style="color:white; font-size:30px">React hooks</li>
+                          <p class="lead mb-0">New day, New Lessons. I hope will add a lot more new skills of React. I think I will play with <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">hooks</a> this week.</p>
+          
+             
+                          <li style="color:white; font-size:30px">TypeScript</li>
+                          <p class="lead mb-0">Read couple of pages from the book provided by prof Bart <a href="https://www.oreilly.com/library/view/programming-typescript/9781492037644/" target="_blank">here</a>.</p>
+          
+                           <li style="color:white; font-size:30px">Explore new options</li>
+                          <p class="lead mb-0">Watching youTube videos and going through articles provided by other classmates.</p>
+        
+                          
+                        </ul>
+                        </div>    
+  
+    </div>
 
+      </div>
+      </div>   
       </section>
+
+      
  
 
         
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+            });
+          }
+          </script>
+          
         
       </body>
 
