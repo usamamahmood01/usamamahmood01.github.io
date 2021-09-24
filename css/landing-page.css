@@ -132,3 +132,13 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
