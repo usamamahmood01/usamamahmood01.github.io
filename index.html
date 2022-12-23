@@ -29,15 +29,19 @@
   color: white;
   cursor: pointer;
   padding: 15px;
-  width: 75%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 20px;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #17a2b8;
+}
+
+.active {
+  background-color: #28a745;
 }
 
 .content {
@@ -45,12 +49,63 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #443f3f;
+  background-color: #343a40;
+}
+
+a:link, a:visited {
+  color: #ffc107;
+}
+
+a:hover, a:active {
+  color: #FFEA00;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+:root { scroll-behavior: smooth; }
+
+.stt {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(255, 87, 51) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.7;
+}
+.stt:hover {
+  opacity: 0.8;
+}
+.stt:focus {
+  opacity: 0.9;
+}
+.stt:active {
+  opacity: 1;
 }
 </style>
   
 </head>
-
 
 <body>
   
@@ -112,53 +167,65 @@
     </header>
     
  <!-- Image Showcases -->
-      <section class="showcase mt-5">
+      <section class="showcase mt-1 mb-5">
+        <h2 class="text-center">Projects</h2>
 
-        <div class="row no-gutters bg-dark text-light pt-3 pb-3">
-           
-          <div class="col-lg-5 col-sm-12 order-lg-2 text-white showcase-img pt-5">
-            <img src= "img/cisc.gif" class="img-fluids pt-5">
-          </div> 
-          <div class="col-lg-7 col-sm-12 order-lg-1 my-auto showcase-text">
-            <h2>Cisc Scheduler<h2>
-              <p class="lead mb-0">Our goal, with <a href="https://ud-cisc275-f21.github.io/ud-cis-scheduler-team-21/" 
-                target="_blank">Cisc Scheduler,</a> is to help Computer Science majors at
-                the University of Delaware to put together a Degree Plan and streamline their
-                advising experience. I used React and typescript in this project. You can find the source code
-                <a href="https://github.com/UD-CISC275-F21/ud-cis-scheduler-team-21" 
-                target="_blank">here</a>.
-              </p>                    
-            </div>
-          </div>
-        </div>
-        
+                          <!-- Computer Science Degree Scheduler (Fall 2021) -->
 
-        <div class="container-fluid p-0">
-          <div class="row no-gutters pt-3 mb-5 bg-dark text-light">
-          
-            <div class="col-lg-2 col-sm-12 order-lg-2 text-white showcase-img pb-3">
-              <img src= "img/saroor1.jpeg" class="img-fluid">
-            </div>
-
-            <div class="col-lg-2 col-sm-12 order-lg-2 text-white showcase-img pb-3">
-              <img src= "img/saroor2.jpeg" class="img-fluid ml-3">
-            </div> 
-
-            <div class="col-lg-7 col-sm-12 order-lg-1 my-auto showcase-text">
-              <h2>Saroor <h2>
-                <p class="lead mb-0">
-                  <a href="https://github.com/usamamahmood01/Saroor" 
-                      target="_blank">Saroor</a> is an android based app, developed using java. It is mp3 music player that
-                      reads all the mp3 files and display them in app, you can play, pause, skip forward/backward,
-                      play previous/next songs.
-                </p>
+            <button class="collapsible">Computer Science Degree Scheduler (Fall 2021)</button>
+            <div class="content">
+              <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+                <div class="col-lg-5 col-sm-12 order-lg-2 text-white showcase-img pt-5">
+                  <img src= "img/cisc.gif" class="img-fluids pt-5">
+                </div> 
+                <div class="col-lg-7 col-sm-12 order-lg-1 my-auto showcase-text">
+                  <h2>Cisc Scheduler<h2>
+                    <p class="lead mb-0">Our goal, with <a href="https://ud-cisc275-f21.github.io/ud-cis-scheduler-team-21/" 
+                      target="_blank">Cisc Scheduler,</a> is to help Computer Science majors at
+                      the University of Delaware to put together a Degree Plan and streamline their
+                      advising experience. I used React and typescript in this project. You can find the source code
+                      <a href="https://github.com/UD-CISC275-F21/ud-cis-scheduler-team-21" 
+                      target="_blank">here</a>.
+                    </p>                    
+                  </div>
+                </div>
               </div>
             </div>
-        </div>
-        </section>
 
-      
-        
+                  <!-- Saroor MP3 Music Player (Summer 2021) -->
+
+            <button class="collapsible mt-1">Saroor MP3 Music Player (Summer 2021)</button>
+            <div class="content">
+            <div class="container-fluid p-0 mt-1">
+              <div class="row no-gutters pt-3 mb-5 bg-dark text-light">
+              
+                <div class="col-lg-2 col-sm-12 order-lg-2 text-white showcase-img pb-3">
+                  <img src= "img/saroor1.jpeg" class="img-fluid">
+                </div>
+    
+                <div class="col-lg-2 col-sm-12 order-lg-2 text-white showcase-img pb-3">
+                  <img src= "img/saroor2.jpeg" class="img-fluid ml-3">
+                </div> 
+    
+                <div class="col-lg-7 col-sm-12 order-lg-1 my-auto showcase-text">
+                  <h2>Saroor <h2>
+                    <p class="lead mb-0">
+                      <a href="https://github.com/usamamahmood01/Saroor" 
+                          target="_blank">Saroor</a> is an android based app, developed using java. It is mp3 music player that
+                          reads all the mp3 files and display them in app, you can play, pause, skip forward/backward,
+                          play previous/next songs.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+            </section>
+
+                  <!-- Scroll to the Top) -->
+            <a href='#' class="stt" title="scroll to top"></a>       
+
+
+
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
