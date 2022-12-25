@@ -44,6 +44,11 @@
   background-color: #28a745;
 }
 
+#content img {
+    width: 40%;
+    min-width: 100px;
+}
+
 .content {
   padding: 0 18px;
   max-height: 0;
@@ -170,9 +175,116 @@ a:hover, a:active {
       <section class="showcase mt-1 mb-5">
         <h2 class="text-center">Projects</h2>
 
+                                <!-- Deep Learning // Segmentation -->
+
+            <button class="collapsible mt-1">Image Classification with Custom CNN on CIFAR100 (Fall 2022)</button>
+            <div class="content">
+              <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+                <div class="my-auto showcase-text">
+                  <h2>Image Classification with Custom CNN on CIFAR100<h2>
+                    <p class="lead mb-0">I built a convolutional neural network (CNN) to classify images 
+                      from the CIFAR100 dataset. The architecture of the CNN included three convolutional 
+                      layers, two fully connected layers, and max-pooling layers, and the activation function 
+                      used was the rectified linear unit (RELU). I chose a loss function and an optimizer and 
+                      trained the CNN for 30 epochs, saving the best model that achieved the highest accuracy on 
+                      the training set. I then loaded my best model and used it to predict images in the test set, 
+                      reporting the testing accuracy on the model that I trained.
+                    </p>
+                    <h3>Procedure</h3>
+                    <p class="lead mb-0">
+                      I started by making a class map with distinct colors for each class. 
+                      The pre-trained FCN_resnet_50 model was fed the supplied photos. 
+                      It returned the segmented image. The class map was then used to color 
+                      the segmented image, using a distinct color for each class. 
+                      The model's output was then iterated over a further 21 times to produce 
+                      the feature maps. The feature maps were recorded in a list, which was 
+                      then shown as a tiled grid. You can see what is happening inside the model 
+                      and where the segmentation is headed from the feature map. If you look closely
+                       at the feature map, you'll see that in many photographs the segments are white 
+                       while the background is dark. You may discover photographs with all the segments 
+                       white on the feature map, followed by images with just one segment white. This 
+                       indicates that the model identified and marked that section.
+                    </p>
+                    <h3>Results (scroll):</h3>
+                    <div class="text-white" id="content">
+                      <iframe src="img/DeepLearning/writeup.pdf#toolbar=0" width="100%" height="500px">
+                      </iframe>                  
+                    </div>                         
+                  </div>
+                </div>
+              </div>
+            </div>
+                              
+
+
+
+
+
+
+
+                                        <!-- Auto Mossaicing -->
+
+          <button class="collapsible mt-1">Auto Mosaicking of Images Using SIFT-Based Correspondence Detection (Fall 2022)</button>
+          <div class="content">
+            <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+              <div class="my-auto showcase-text">
+                <h2>Auto Mosaicking of Images Using SIFT-Based Correspondence Detection<h2>
+                  <p class="lead mb-0">To perform auto mosaicking of two images, 
+                    I analyzed the use of corner detectors to compute correspondences 
+                    between the images and the possibility of automatically creating image mosaics. 
+                    To do this, I applied the SIFT algorithm to compute point correspondences between 
+                    two images using their feature (corner) points. This allowed me to create a mosaic 
+                    by blending the two images together in a way that preserved the important features 
+                    and details of each image. The resulting mosaic would be a composite of the two images,
+                     with the goal of creating a seamless and visually appealing image that captures the 
+                     content of both images. 
+                  </p>
+                  <h3>Results:</h3>
+                  <div class="text-white" id="content">
+                    <img src= "img/autoMosaics/auto3.jpg" width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto4.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto5.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto6.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto7.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto8.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                    <img src= "img/autoMosaics/auto9.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                  </div>                         
+                </div>
+              </div>
+            </div>
+          </div>
+                          
+
+                          <!-- Mossaicing by user -->
+
+        <button class="collapsible mt-1">Creating Mosaics with User-Defined Blend Boundaries (Fall 2022)</button>
+        <div class="content">
+          <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+            <div class="my-auto showcase-text">
+              <h2>Creating Mosaics with User-Defined Blend Boundaries<h2>
+                <p class="lead mb-0">To create a mosaic using Laplacian plane based reconstruction, 
+                  the user can select the blend boundaries of the images using the mouse. The left and right images will 
+                  share a joint region, and each mosaic will be made up of two images from different cameras or viewpoints. 
+                  The process involves blending the left image with the right image to create the final mosaic. 
+                </p>
+                <h3>Results:</h3>
+                <div class="text-white" id="content">
+                  <img src= "img/UserBasedMosaic/TestC_mosaic.jpg" width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                  <img src= "img/UserBasedMosaic/TestAmosaic.jpg"  width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                  <img src= "img/UserBasedMosaic/TestDmosaic.jpg" width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                  <img src= "img/UserBasedMosaic/TestBmosaic.jpg" width="650" height="250" class="img-fluids mt-1 mb-1 ml-1">
+                </div>                         
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
                           <!-- Computer Science Degree Scheduler (Fall 2021) -->
 
-            <button class="collapsible">Computer Science Degree Scheduler (Fall 2021)</button>
+            <button class="collapsible mt-1">Computer Science Degree Scheduler (Fall 2021)</button>
             <div class="content">
               <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
                 <div class="col-lg-5 col-sm-12 order-lg-2 text-white showcase-img pt-5">
@@ -219,6 +331,7 @@ a:hover, a:active {
                 </div>
             </div>
             </div>
+            
             </section>
 
                   <!-- Scroll to the Top) -->
