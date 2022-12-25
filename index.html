@@ -37,11 +37,11 @@
 }
 
 .collapsible:hover {
-  background-color: #17a2b8;
+  background-color: #3d4349;
 }
 
 .active {
-  background-color: #28a745;
+  background-color: #0f1f13;
 }
 
 #content img {
@@ -173,11 +173,16 @@ a:hover, a:active {
     
  <!-- Image Showcases -->
       <section class="showcase mt-1 mb-5">
-        <h2 class="text-center">Projects</h2>
+        <h2 class="text-center" >
+          <span class="text-center" style="color:#f5b403">Projects</span>
+          <span class="text-center" style="color: #343a40">/</span>
+          <span class="text-center" style="color:#0092CC">Research</span>        
+        </h2>
+        
 
                                 <!-- Deep Learning // Segmentation -->
 
-            <button class="collapsible mt-1">Image Classification with Custom CNN on CIFAR100 (Fall 2022)</button>
+            <button class="collapsible mt-1" style="color:#DCD427" >Project: Image Classification with Custom CNN on CIFAR100 (Fall 2022)</button>
             <div class="content">
               <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
                 <div class="my-auto showcase-text">
@@ -189,6 +194,8 @@ a:hover, a:active {
                       trained the CNN for 30 epochs, saving the best model that achieved the highest accuracy on 
                       the training set. I then loaded my best model and used it to predict images in the test set, 
                       reporting the testing accuracy on the model that I trained.
+                      <a href="https://github.com/usamamahmood01/CISC442-PR3/blob/main/pr3_part2.py" 
+                      target="_blank">Source Code</a>.
                     </p>
                     <h3>Procedure</h3>
                     <p class="lead mb-0">
@@ -213,18 +220,10 @@ a:hover, a:active {
                   </div>
                 </div>
               </div>
-            </div>
-                              
-
-
-
-
-
-
 
                                         <!-- Auto Mossaicing -->
 
-          <button class="collapsible mt-1">Auto Mosaicking of Images Using SIFT-Based Correspondence Detection (Fall 2022)</button>
+          <button class="collapsible mt-1" style="color: #DCD427" >Project: Auto Mosaicking of Images Using SIFT-Based Correspondence Detection (Fall 2022)</button>
           <div class="content">
             <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
               <div class="my-auto showcase-text">
@@ -238,6 +237,9 @@ a:hover, a:active {
                     and details of each image. The resulting mosaic would be a composite of the two images,
                      with the goal of creating a seamless and visually appealing image that captures the 
                      content of both images. 
+                     <a href="https://github.com/usamamahmood01/CISC442-PR1/blob/main/Extra_Credit.py" 
+                     target="_blank">Source Code</a>.
+   
                   </p>
                   <h3>Results:</h3>
                   <div class="text-white" id="content">
@@ -252,12 +254,12 @@ a:hover, a:active {
                 </div>
               </div>
             </div>
-          </div>
+
                           
 
                           <!-- Mossaicing by user -->
 
-        <button class="collapsible mt-1">Creating Mosaics with User-Defined Blend Boundaries (Fall 2022)</button>
+        <button class="collapsible mt-1" style="color:#DCD427">Project: Creating Mosaics with User-Defined Blend Boundaries (Fall 2022)</button>
         <div class="content">
           <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
             <div class="my-auto showcase-text">
@@ -265,7 +267,9 @@ a:hover, a:active {
                 <p class="lead mb-0">To create a mosaic using Laplacian plane based reconstruction, 
                   the user can select the blend boundaries of the images using the mouse. The left and right images will 
                   share a joint region, and each mosaic will be made up of two images from different cameras or viewpoints. 
-                  The process involves blending the left image with the right image to create the final mosaic. 
+                  The process involves blending the left image with the right image to create the final mosaic.
+                  <a href="https://github.com/usamamahmood01/CISC442-PR1/blob/main/PR1.py" 
+                  target="_blank">Source Code</a>.
                 </p>
                 <h3>Results:</h3>
                 <div class="text-white" id="content">
@@ -280,11 +284,69 @@ a:hover, a:active {
         </div>
 
 
+          <!-- Independent Study Dr. Keith -->
+
+<!--           <button class="collapsible mt-1" style="color: #0092CC" >Research: Improving and Analyzing Data for Machine Learning and AI Models (Fall 2022)</button>
+          <div class="content">
+            <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+              <div class="my-auto showcase-text">
+                <h2>Improving and Analyzing Data for Machine Learning and AI Models<h2>
+                  <p class="lead mb-0">In this project, I improved the data collected by A. I. Whoo and 
+                    Tanvir Rahman on individuals' activities, genders, and ages. 
+                    I selected a sample of 100 individuals from the original dataset and 
+                    added more features and information on the individuals' appearance. 
+                    I also wrote a Python script to identify and highlight duplicate entries, 
+                    resulting in a more accurate and precise dataset. After applying hierarchical 
+                    clustering, I found that the top and bottom colors of individuals' clothing and 
+                    their accessories were the most important features. This work demonstrates the 
+                    significance of clean and accurate data for the success of machine learning and AI 
+                    models and the importance of thoroughly cleaning and organizing data before using 
+                    it to train models.
+    
+                  </p>
+                  <h3>Read full Paper:</h3>
+                  <div class="text-white" id="content">
+                    <iframe src="img/IndepStudy/CISC366.pdf#toolbar=0" width="100%" height="500px">
+                  </div>                         
+                </div>
+              </div>
+            </div> -->
+
+
+            <button class="collapsible mt-1" style="color:#0092CC" >Research: Improving and Analyzing Data for Machine Learning and AI Models (Fall 2022)</button>
+            <div class="content">
+              <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
+                <div class="my-auto showcase-text">
+                  <h2>Improving and Analyzing Data for Machine Learning and AI Models (Fall 2022)<h2>
+                    <p class="lead mb-0">In this project, I improved the data collected by A. I. Whoo and 
+                      Tanvir Rahman on individuals' activities, genders, and ages. 
+                      I selected a sample of 100 individuals from the original dataset and 
+                      added more features and information on the individuals' appearance. 
+                      I also wrote a Python script to identify and highlight duplicate entries, 
+                      resulting in a more accurate and precise dataset. After applying hierarchical 
+                      clustering, I found that the top and bottom colors of individuals' clothing and 
+                      their accessories were the most important features. This work demonstrates the 
+                      significance of clean and accurate data for the success of machine learning and AI 
+                      models and the importance of thoroughly cleaning and organizing data before using 
+                      it to train models.
+                    </p>
+                    <h3>Read  full Paper (scroll):</h3>
+                    <div class="text-white" id="content">
+                      <iframe src="img/IndepStudy/CISC366.pdf#toolbar=0" width="100%" height="500px">
+                      </iframe>                  
+                    </div>                         
+                  </div>
+                </div>
+              </div>
+
+                                                           
+                             
+                             
 
 
                           <!-- Computer Science Degree Scheduler (Fall 2021) -->
 
-            <button class="collapsible mt-1">Computer Science Degree Scheduler (Fall 2021)</button>
+            <button class="collapsible mt-1" style="color:#DCD427">Project: Computer Science Degree Scheduler (Fall 2021)</button>
             <div class="content">
               <div class="row no-gutters bg-dark text-light pt-3 pb-3 mt-1">
                 <div class="col-lg-5 col-sm-12 order-lg-2 text-white showcase-img pt-5">
@@ -306,7 +368,7 @@ a:hover, a:active {
 
                   <!-- Saroor MP3 Music Player (Summer 2021) -->
 
-            <button class="collapsible mt-1">Saroor MP3 Music Player (Summer 2021)</button>
+            <button class="collapsible mt-1" style="color:#DCD427">Project: Saroor MP3 Music Player (Summer 2021)</button>
             <div class="content">
             <div class="container-fluid p-0 mt-1">
               <div class="row no-gutters pt-3 mb-5 bg-dark text-light">
